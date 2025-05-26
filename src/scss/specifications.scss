@@ -119,6 +119,10 @@ section {
   min-height: 100%;
   position: relative;
   background-color: #2C302F;
+  padding-top: 87px;
+  @media(max-width: 575px){
+    padding-top: 60px;
+  }
 }
 
 .main {

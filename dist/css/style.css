@@ -2276,6 +2276,12 @@ section {
   min-height: 100%;
   position: relative;
   background-color: #2C302F;
+  padding-top: 87px;
+}
+@media (max-width: 575px) {
+  .wrapper {
+    padding-top: 60px;
+  }
 }
 
 .main {
@@ -3154,8 +3160,14 @@ h3,
 }
 
 .header {
-  padding-top: 19px;
-  padding-bottom: 19px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  background-color: #2C302F;
 }
 @media (max-width: 575px) {
   .header {
