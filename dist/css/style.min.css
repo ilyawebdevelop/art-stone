@@ -2213,6 +2213,12 @@ section {
   padding-top: 130px;
   padding-bottom: 130px;
 }
+@media (max-width: 1500px) {
+  section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
 @media (max-width: 991px) {
   section {
     padding-bottom: 55px;
@@ -5299,6 +5305,9 @@ a.contactsItemText:hover {
   }
 }
 
+.salonsContent {
+  padding-top: 80px;
+}
 .salonsContentTitle {
   margin-bottom: 30px;
 }
