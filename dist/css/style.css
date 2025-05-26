@@ -2370,7 +2370,7 @@ h1,
   line-height: 126%;
   letter-spacing: 1.44px;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1600px) {
   h1,
 .h1 {
     font-size: 50px;
@@ -2395,7 +2395,7 @@ h2,
   line-height: 126%;
   letter-spacing: 1.44px;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1600px) {
   h2,
 .h2 {
     font-size: 42px;
@@ -2420,7 +2420,7 @@ h2 .title-md,
   line-height: 126%;
   /* 70.56px */
 }
-@media (max-width: 1400px) {
+@media (max-width: 1600px) {
   h2 .title-md,
 .h2 .title-md {
     font-size: 42px;
@@ -5312,6 +5312,11 @@ a.contactsItemText:hover {
 
 .salonsContent {
   padding-top: 80px;
+}
+@media (max-width: 575px) {
+  .salonsContent {
+    padding-top: 50px;
+  }
 }
 .salonsContentTitle {
   margin-bottom: 30px;

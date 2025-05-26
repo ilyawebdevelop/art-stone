@@ -1,6 +1,9 @@
 .salons {
   &Content {
     padding-top: 80px;
+    @media(max-width: 575px){
+      padding-top: 50px;
+    }
     &Title {
       margin-bottom: 30px;
     }
