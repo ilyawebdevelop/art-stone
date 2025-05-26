@@ -3365,7 +3365,7 @@ h3,
   position: relative;
   overflow: hidden;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1600px) {
   .intro {
     padding-top: 15px;
   }
@@ -3483,6 +3483,11 @@ h3,
   height: 660px;
   width: 100%;
   object-fit: cover;
+}
+@media (max-width: 1600px) {
+  .introSlideImg img {
+    height: 450px;
+  }
 }
 @media (max-width: 1400px) {
   .introSlideImg img {
