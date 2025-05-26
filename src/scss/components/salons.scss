@@ -1,0 +1,65 @@
+.salons {
+  &Content {
+    &Title {
+      margin-bottom: 30px;
+    }
+
+    &Descr {
+      max-width: 820px;
+      margin-bottom: 80px;
+      @media(max-width: 767px){
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &List {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 80px;
+    row-gap: 29px;
+
+    @media(max-width: 1400px) {
+      column-gap: 30px;
+      row-gap: 15px;
+    }
+    @media(max-width: 575px){
+      column-gap: 0;
+    }
+  }
+
+  &Item {
+    grid-column: 4 span;
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+
+    @media(max-width: 1199px) {
+      grid-column: 6 span;
+    }
+    @media(max-width: 767px){
+      grid-column: 12 span;
+    }
+
+    &Img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      flex-shrink: 0;
+      @media(max-width: 575px){
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    &Text {
+      font-size: 14px;
+      line-height: normal;
+      padding-left: 32px;
+      background: url('@img/icons/place.svg') no-repeat left center / 24px;
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+  }
+}

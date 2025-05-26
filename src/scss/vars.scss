@@ -1,0 +1,37 @@
+// Font-weights
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$extrabold: 800;
+$black: 900;
+
+ // Containers
+:root { 
+  --content-width: 1820px;
+  --content-fluid-width: 1700px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --container-fluid-width: calc(var(--content-fluid-width) + (var(--container-offset) * 2));
+  --font-family: 'Montserrat', sans-serif;
+  --font-family-title: 'Playfair Display', serif;
+  --font-family-third: 'Playfair', serif;
+  --font-family-forth: 'Manrope', sans-serif;
+  --font-family-inter: 'Inter', sans-serif;
+  --outline: #e3ebf2;
+  --main-color: #FFF;
+  --black: #2C302F;
+  --background: #f3f7fd;
+  --success: #27c340;
+  --error: #e02828;
+  --gold: #EEC298;
+  --disabled: #c5cfdc;
+  --tetriary: #abc4e4;
+  --primary: #2f80ed;
+  --gray: #9D9D9D;
+  --gray-dark: #858585;
+  --secondary: #2169c9;
+  --secondary-color-black: #2b3e73;
+  --secondary-text-color-black: #a9aaad;
+}

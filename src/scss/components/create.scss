@@ -1,0 +1,86 @@
+.create {
+  overflow: hidden;
+  @media(max-width: 991px){
+   padding-top: 20px;
+  }
+
+  &Title {
+    margin-bottom: 40px;
+    @media(max-width: 991px){
+      margin-bottom: 15px;
+    }
+  }
+
+  &Slider {
+    overflow: visible;
+    padding-right: 80px;
+
+    @media(max-width: 575px) {
+      padding-right: 0;
+    }
+  }
+
+  &Slide {
+    &Img {
+      img {
+        height: 470px;
+        width: 100%;
+        object-fit: cover;
+        transition: opacity .2s linear;
+
+        @media(max-width: 1400px) {
+          height: 400px;
+        }
+
+        @media(max-width: 1199px) {
+          height: 360px;
+        }
+
+        @media(max-width: 991px) {
+          height: 280px;
+        }
+
+        @media(max-width: 767px) {
+          height: 250px;
+        }
+
+        @media(max-width: 575px) {
+          height: 390px;
+        }
+
+        &:hover {
+          opacity: .85;
+        }
+      }
+    }
+
+    &Title {
+      font-size: 26px;
+      font-weight: 500;
+      line-height: 126%;
+      letter-spacing: 0.52px;
+      margin-top: 19px;
+      display: block;
+
+      @media(max-width: 991px) {
+        font-size: 20px;
+        margin-top: 12px;
+        text-align: center;
+      }
+
+      &:hover {
+        color: var(--gold);
+      }
+    }
+  }
+
+  .navArrowW {
+    display: flex;
+    justify-content: center;
+    column-gap: 9px;
+    margin-top: 60px;
+    @media(max-width: 991px){
+      margin-top: 15px;
+    }
+  }
+}

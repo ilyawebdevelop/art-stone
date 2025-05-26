@@ -1,0 +1,133 @@
+.contacts {
+  padding-top: 50px;
+  &Title {
+    margin-bottom: 24px;
+  }
+  @media(max-width: 991px){
+    padding-top: 20px;
+  }
+
+  &Iframe {
+    width: 740px;
+    flex-shrink: 0;
+    @media(max-width: 1400px){
+        width: 600px;
+    }
+    @media(max-width: 767px){
+      width: 100%;
+    }
+
+    iframe {
+      width: 100%;
+      height: 460px;
+      border-radius: 21px;
+      filter: grayscale(100%);
+      @media(max-width: 767px){
+        height: 350px;
+      }
+      @media(max-width: 575px){
+        height: 275px;
+      }
+    }
+  }
+
+  &W {
+    display: flex;
+    column-gap: 80px;
+    @media(max-width: 991px){
+      flex-direction: column;
+    }
+  }
+
+  &L {
+    padding-top: 30px;
+    width: 100%;
+    @media(max-width: 991px){
+      padding-top: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+  &Item {
+    margin-bottom: 28px;
+
+    &Name {
+      margin-bottom: 8px;
+      color: #6E7075;
+      font-family: var(--font-family-forth);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 120%;
+      letter-spacing: 0.14px;
+      &--mb-12 {
+        margin-bottom: 12px;
+      }
+    }
+
+    &Text {
+      font-family: var(--font-family-forth);
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 120%;
+      letter-spacing: 0.2px;
+    }
+    .socials {
+      ul {
+        display: flex;
+        column-gap: 12px;
+        li {
+          a {
+            img {
+              width: 32px;
+              transition: opacity .2s linear;
+              &:hover {
+                opacity: .5;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+a.contactsItemText {
+  &:hover {
+    color: var(--gold);
+  }
+}
+.contactsPage {
+  .contactsW {
+    align-items: flex-start;
+  }
+  .contactsL {
+    padding-top: 0;
+  }
+  .contactsIframe{
+    padding-top: 13px;
+    padding-bottom: 10px;
+    position: relative;
+    z-index: 1;
+    
+    iframe {
+      border-radius: 0;
+    }
+  }
+  .contactsTitle {
+    margin-bottom: 50px;
+  }
+  .contactsR {
+    position: relative;
+    padding-right: 13px;
+    margin-top: 30px;
+    @media(max-width: 767px){
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  .contactsAbstract {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+  }
+}

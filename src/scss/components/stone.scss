@@ -1,0 +1,142 @@
+.stone {
+  background-color: #FFF;
+
+  &Title {
+    color: #1D1D1D;
+    margin-bottom: 50px;
+    text-align: center;
+    @media(max-width: 991px){
+      margin-bottom: 30px;
+    }
+  }
+
+  &Slide {
+    height: auto;
+    .stoneCard {
+      height: 100%;
+      &Img {
+        height: 316px;
+        @media(max-width: 1400px){
+          height: 250px;
+        }
+        @media(max-width: 991px){
+          height: 200px;
+        }
+        @media(max-width: 575px){
+          height: 43vw;
+        }
+
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  &Card {
+    &Img {
+      padding: 20px;
+      border: 1px solid #EFEFEF;
+      display: flex;
+      @media(max-width: 1199px){
+        padding: 12px;
+      }
+    }
+    &Title {
+      color: #373737;
+      text-align: center;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 126%;
+      letter-spacing: 0.48px;      
+      margin-top: 20px;
+      @media(max-width: 1400px){
+       font-size: 20px; 
+       margin-top: 15px;
+      }
+      @media(max-width: 991px){
+        font-size: 14px;
+        margin-top: 12px;
+      }
+    }
+  }
+  &Slider {
+    &W {
+      display: flex;      
+      column-gap: 16px;
+      @media(max-width: 575px){
+        position: relative;
+        padding-bottom: 75px;
+      }
+    }
+  }
+  .navArrow {
+    margin-top: 120px;
+    @media(max-width: 1400px){
+      margin-top: 90px;
+    }
+    @media(max-width: 991px){
+      margin-top: 70px;
+    }
+    @media(max-width: 575px){
+      margin-top: 0;
+      position: absolute;
+     
+      bottom: 0;
+    }
+    &Prev {
+      @media(max-width: 575px){
+        left: calc(50% - 55px);
+      }
+    }
+    &Next {
+      @media(max-width: 575px){
+        right: calc(50% - 55px);
+      }
+    }
+  }
+}
+.stones {
+  &Grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: 35px;
+    @media(max-width: 575px){
+      row-gap: 20px;
+    }
+    .stoneCard {
+      grid-column: 3 span;
+      @media(max-width: 1199px){
+        grid-column: 4 span;
+      }
+      @media(max-width: 767px){
+        grid-column: 6 span;
+      }
+      &Title {
+        color: #fff;
+      }
+      &Img {
+        img {
+          height: 316px;
+          width: 100%;
+          @media(max-width: 1400px){
+            height: 245px;
+          }
+          @media(max-width: 1199px){
+            height: 300px;
+          }
+          @media(max-width: 991px){
+            height: 220px;
+          }
+          @media(max-width: 767px){
+            height: 250px;
+          }
+          @media(max-width: 575px){
+            height: 40vw;
+          }
+        }
+      }
+    }
+  }
+}

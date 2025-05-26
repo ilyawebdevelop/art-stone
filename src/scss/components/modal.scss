@@ -1,0 +1,90 @@
+// modal
+.modal {
+  width: 460px;
+  display: none;
+  padding: 40px 43px 55px;
+  background-color: #fff;
+  border: 3px solid #E3C3AB;
+  filter: drop-shadow(0px 1px 40px rgba(0, 59, 149, 0.20));
+  @media(max-width: 575px){
+    padding: 40px 30px;
+  }
+
+  &Descr {
+    color: #000;
+    text-align: center;    
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.28px;
+    max-width: 303px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+  }
+
+  &-title {
+    font-size: 23px;
+  }
+
+  .btn-close {
+    background: none;
+    opacity: 1;
+  }
+
+  .h3 {
+    color: #333;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 120.882%;
+    letter-spacing: -0.56px;
+    font-family: var(--font-family);
+    margin-bottom: 9px;
+    text-transform: none;
+  }
+  .inputW {
+    margin-bottom: 9px;
+  }
+  .formInput {
+    border: 1px solid #E3C3AB;
+    background: rgba(255, 246, 240, 0.22);    
+    height: 60px;
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+    &::placeholder {
+      color: rgba(51, 51, 51, 0.50);
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 120.882%;     
+    }
+  }
+  .formBtn{
+    font-size: 18px;
+    &:hover {
+      background-color: #373737;
+      color: #fff;
+    }
+  }
+  .inputW--file {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    input {
+      display: none;
+    }
+    label {
+      padding-left: 23px;
+      background: url('@img/icons/file-black.svg') no-repeat left center / 18px;
+      cursor: pointer;
+      transition: opacity .2s linear;
+      font-weight: 500;
+      color: rgba(51, 51, 51, 0.50);
+      font-size: 16px;
+
+      &:hover {
+        opacity: .85;
+      }
+    }
+  }
+}

@@ -1,0 +1,190 @@
+// Header
+.header {
+  padding-top: 19px;
+  padding-bottom: 19px;
+  @media(max-width: 575px){
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba($color: #D9D9D9, $alpha: .3);
+  }
+  &W {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .socials {
+    ul {
+      display: flex;
+      align-items: center;
+      column-gap: 7px;
+
+      li {
+        a {
+          &:hover {
+            opacity: .5;
+          }
+          img {
+            width: 31px;
+          }
+        }
+      }
+    }
+  }
+  &Phone {
+    &W {
+    
+      align-items: center;
+      column-gap: 30px;
+    }
+  }
+  &Nav {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    overflow-y: scroll;
+    padding: 10px 15px 60px;
+    z-index: 1;
+    background-color: #272727;
+    max-width: 320px;
+    width: 100%;
+    z-index: 2;
+    &.active {
+      display: block;
+      -webkit-animation: shows 0.5s;
+      animation: shows 0.5s;
+    }
+  }
+  &Contacts {
+    display: flex;
+    align-items: center;
+    column-gap: 85px;
+    @media(max-width: 1199px){
+      column-gap: 40px;
+    }
+    @media(max-width: 575px){
+      margin-left: auto;
+      margin-right: 33px;
+    }
+    &Box {
+      &--flex {
+        display: flex;
+        column-gap: 30px;
+      }
+    }
+  }
+  &Address {
+    font-size: 14px;
+    padding-left: 22px;
+    background: url('@img/icons/place.svg') no-repeat left center / 18px;
+    &:hover {
+      opacity: .7;
+    }
+  }
+  .online {
+    color: #858585; 
+    font-family: var(--font-family-inter);
+    font-size: 12px;
+    line-height: 80%; 
+    letter-spacing: -0.48px;    
+    text-align: end;
+    width: fit-content;
+    margin-left: auto;
+    display: flex;
+    column-gap: 6px;
+    &::before {
+      content: '';
+      width: 9px;
+      height: 9px;
+      background-color: #e7bb9c;
+      border-radius: 50%;
+      display: block;
+    }
+  }
+  .phone {
+    margin-bottom: 10px;
+    display: block;
+  }
+  .logo {
+    img {
+      width: 130px;
+      @media(max-width: 575px){
+        width: 117px;
+      }
+    }
+    &--sm {
+      display: none;
+      @media(max-width: 575px){
+        display: block;
+      }
+    }
+    &--lg {
+      @media(max-width: 575px){
+        display: none;
+      }
+    }
+  }
+  &.border-b {
+    border-bottom: 1px solid rgba($color: #D9D9D9, $alpha: .3);
+  }
+}
+.headerContactsBox:has(.headerAddress){
+  @media(max-width: 991px){
+    display: none;
+  }
+}
+.headerContactsBox:has(.button){
+  @media(max-width: 767px){
+    display: none;
+  }
+}
+.headerPhoneW {
+  @media(max-width: 575px){
+    display: none;
+  }
+}
+.headerLogoMobile {
+  display: block;
+
+  img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+.headerNavListMobile{ 
+  border-bottom: 1px solid rgba(217, 217, 217, 0.3);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  li {
+    text-align: center;
+    &:not(:last-child){
+      margin-bottom: 6px;
+    }  
+  }
+}
+.headerContactsMobile{
+  padding-top: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(217, 217, 217, 0.3);
+  .phone {
+    text-align: center;
+    font-weight: 500;
+  }
+  .online {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 8px;
+    margin-top: 13px;
+  }
+  .headerAddress {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+    width: fit-content;
+  }
+}
